@@ -1,0 +1,5 @@
+.rides:hover{
+    transform: rotateX(360deg);
+    transition:1s;
+   
+}

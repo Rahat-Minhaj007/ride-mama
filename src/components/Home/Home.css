@@ -1,0 +1,17 @@
+.home {
+    background-image: url('../images/Bg1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 90vh;
+}
+
+/* linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), */
+
+.home-ride {
+    display: grid;
+    grid-template-columns: repeat(4, 0.2fr);
+    margin-left: 300px;
+    
+}

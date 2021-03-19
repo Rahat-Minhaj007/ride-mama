@@ -1,9 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router';
-
 import './RideDetail.css';
-import img from '../images/Map.png';
 import { Link } from 'react-router-dom';
+import Map from '../Map/Map';
 
 const RideDetail = () => {
     const {id} = useParams();
@@ -38,7 +37,8 @@ const RideDetail = () => {
             </div>
 
             <div className="col-sm-5">
-                <img  style={{width:"100%"}} src={img} alt=""/>
+            
+                <Map></Map>
             </div>
             
         </div>

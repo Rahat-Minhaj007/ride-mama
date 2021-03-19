@@ -7,6 +7,7 @@ import icon from '../images/peopleicon.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationArrow } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
+import Map from '../Map/Map';
 
 
 const PriceDetail = () => {
@@ -16,7 +17,7 @@ const PriceDetail = () => {
     const {img,regular,platinum,premium,regularPrc,platinumPrc,premiumPrc} = ride;
     // console.log(ride);
     return (
-        <div className="row  mt-5 d-flex justify-content-around">
+        <div className="row  mt-5 ml-5 d-flex justify-content-around">
             <div className=" col-sm-4">
                 <div className="card" style={{ width: '18rem',border:"none"}}>
                     <div  style={{backgroundColor:"rgb(255, 204, 0)" }} className="card-body">
@@ -71,7 +72,8 @@ const PriceDetail = () => {
                 </div>
             </div>
             <div className=" col-sm-5">
-            <img  style={{width:"100%"}} src={map} alt=""/>
+            {/* <img  style={{width:"100%"}} src={map} alt=""/> */}
+            <Map></Map>
             </div>
         </div>
     );

@@ -3,14 +3,14 @@ import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Rides = (props) => {
-    const { name, img } = props.data;
+    const { name,img,id} = props.data;
     return (
-        <div className=" rides mt-5 mb-5 text-center">
-            <Card style={{ width: '13rem' }}>
+        <div className="rides mt-5 mb-5 text-center">
+            <Card style={{ width: '12rem'}}>
                 <Card.Body>
                     <img style={{ width: '50%' }} src={img} alt="" />
-                    <Card.Title>{name}</Card.Title>
-                    <Link to="#"><button className="btn btn-primary">Explore</button></Link>
+                   
+                    <Link style={{textDecoration:"none"}} to={`/rideDetail/${id}`}> <Card.Title style={{color:"black"}} className="mt-3 ">{name}</Card.Title></Link>
 
                 </Card.Body>
             </Card>

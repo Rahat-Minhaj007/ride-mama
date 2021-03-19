@@ -2,28 +2,63 @@
     {
       "id": 1,
       "name": "CAR",
-      "img":"https://i.ibb.co/mCNnLbN/Frame-2.png"
+      "img":"https://i.ibb.co/mCNnLbN/Frame-2.png",
+      "regular" : "REGULAR CAR",
+      "platinum" : "PLATINUM CAR",
+      "premium" : "PREMIUM CAR",
+      "regularPrc" : "$67",
+      "platinumPrc" : "$89",
+      "premiumPrc" : "$100"
+
       
     },
     {
       "id": 2,
       "name": "BUS",
-       "img":"https://i.ibb.co/qxF4n8C/Frame-1.png"
+       "img":"https://i.ibb.co/qxF4n8C/Frame-1.png",
+       "regular" : "REGULAR BUS",
+       "platinum" : "PLATINUM BUS",
+       "premium" : "PREMIUM BUS",
+       "regularPrc" : "$30",
+       "platinumPrc" : "$40",
+       "premiumPrc" : "$55"
        
     },
     {
       "id": 3,
       "name": "TRAIN",
-       "img":"https://i.ibb.co/dkcVpBJ/Group.png"
+       "img":"https://i.ibb.co/dkcVpBJ/Group.png",
+       "regular" : "REGULAR TRAIN",
+       "platinum" : "PLATINUM TRAIN",
+       "premium" : "PREMIUM TRAIN",
+       "regularPrc" : "$45",
+       "platinumPrc" : "$69",
+       "premiumPrc" : "$87"
 
     },
     {
       "id": 4,
       "name": "BIKE",
-       "img":"https://i.ibb.co/59nhqK6/Frame.png"
+       "img":"https://i.ibb.co/59nhqK6/Frame.png",
+       "regular" : "REGULAR BIKE",
+       "platinum" : "PLATINUM BIKE",
+       "premium" : "PREMIUM BIKE",
+       "regularPrc" : "$18",
+       "platinumPrc" : "$25",
+       "premiumPrc" : "$39"
      
+    },
+    {
+      "id": 5,
+      "name": "SHIP",
+       "img":"https://i.ibb.co/0hV0BsP/ship.jpg",
+       "regular" : "REGULAR SHIP",
+       "platinum" : "PLATINUM SHIP",
+       "premium" : "PREMIUM SHIP",
+       "regularPrc" : "$79",
+       "platinumPrc" : "$105",
+       "premiumPrc" : "$200"
     }
 ]
-
 
 

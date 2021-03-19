@@ -9,6 +9,8 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import NoMatch from './components/NoMatch/NoMatch';
 import Login from './components/Login/Login';
+import RideDetail from './components/RideDetail/RideDetail';
+import PriceDetail from './components/PriceDetail/PriceDetail';
 
 function App() {
   return (
@@ -20,6 +22,12 @@ function App() {
         </Route>
         <Route path="/login">
           <Login></Login>
+        </Route>
+        <Route path="/rideDetail/:id">
+          <RideDetail></RideDetail>
+        </Route>
+        <Route path="/price/:id">
+          <PriceDetail></PriceDetail>
         </Route>
         <Route exact path="/">
           <Home></Home>

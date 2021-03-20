@@ -1,10 +1,10 @@
 .home {
-    background-image: url('../images/Bg1.png');
+    background-image: url('../images/Bg4.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
-    height: 90vh;
+    height: 93vh;
     
 }
 
@@ -13,7 +13,7 @@
 .home-ride {
     display: grid;
     grid-template-columns: repeat(4, 0.2fr);
-    margin-left: 300px;
+    margin-left: 360px;
     
 }
 @media (max-width: 768px) {

@@ -3,6 +3,7 @@ import { useParams } from 'react-router';
 import './RideDetail.css';
 import { Link } from 'react-router-dom';
 import Map from '../Map/Map';
+// import map from '../images/Map.png';
 
 const RideDetail = () => {
     const {id} = useParams();
@@ -37,7 +38,7 @@ const RideDetail = () => {
             </div>
 
             <div className="col-sm-5">
-            
+            {/* <img  style={{width:"100%"}} src={map} alt=""/> */}
                 <Map></Map>
             </div>
             

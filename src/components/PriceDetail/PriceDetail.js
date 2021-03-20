@@ -2,7 +2,7 @@ import React from 'react';
 import './PriceDetail.css';
 import fakeData from '../../Fakedata/Fakedata.json';
 import { useParams } from 'react-router';
-import map from '../images/Map.png';
+// import map from '../images/Map.png';
 import icon from '../images/peopleicon.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationArrow } from '@fortawesome/free-solid-svg-icons'

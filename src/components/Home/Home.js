@@ -7,19 +7,19 @@ import './Home.css';
 
 const Home = () => {
 
-const [data,setData] = useState([]);
+    const [data, setData] = useState([]);
     useEffect(() => {
         setData(fakeData);
-    },[])
-    
+    }, [])
+
     return (
         <div className="home">
             <div className="home-ride">
-           {
-               data.map(dt => <Rides data={dt} key ={dt.id}></Rides>)
-           }
-           </div>
-            
+                {
+                    data.map(dt => <Rides data={dt} key={dt.id}></Rides>)
+                }
+            </div>
+
         </div>
     );
 };

@@ -1,13 +1,14 @@
 import React, { useContext } from 'react';
 import * as ReactBootStrap from 'react-bootstrap'
 import { UserContext } from '../../App';
+import './Header.css';
 
 const Header = () => {
     const [loggedInUser,setLoggedInUser] = useContext(UserContext);
     const {name} = loggedInUser;
     console.log(loggedInUser);
     return (
-        <div>
+        <div className="navi">
             <ReactBootStrap.Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <ReactBootStrap.Navbar.Brand href="/home"><h1>RIDE MAMA</h1></ReactBootStrap.Navbar.Brand>
                 <ReactBootStrap.Navbar.Brand >

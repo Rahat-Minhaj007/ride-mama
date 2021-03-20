@@ -16,3 +16,18 @@
     margin-left: 300px;
     
 }
+@media (max-width: 768px) {
+    .home-ride {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .home {
+        background-image: url('../images/Bg2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:200vh;
+        width:500px;
+        
+       }
+}

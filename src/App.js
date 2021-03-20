@@ -12,6 +12,7 @@ import Login from './components/Login/Login';
 import RideDetail from './components/RideDetail/RideDetail';
 import PriceDetail from './components/PriceDetail/PriceDetail';
 import { createContext, useState } from 'react';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 export const UserContext = createContext();
 
@@ -30,9 +31,9 @@ function App() {
         <Route path="/login">
           <Login></Login>
         </Route>
-        <Route path="/rideDetail/:id">
+        <PrivateRoute path="/rideDetail/:id">
           <RideDetail></RideDetail>
-        </Route>
+        </PrivateRoute>
         <Route path="/price/:id">
           <PriceDetail></PriceDetail>
         </Route>

@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import * as ReactBootStrap from 'react-bootstrap'
+import { UserContext } from '../../App';
 
 const Header = () => {
+    const [loggedInUser,setLoggedInUser] = useContext(UserContext);
+    const {name} = loggedInUser;
+    console.log(loggedInUser);
     return (
         <div>
             <ReactBootStrap.Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -25,6 +29,7 @@ const Header = () => {
                 </ReactBootStrap.Nav.Link>
                         <ReactBootStrap.Nav.Link href="/contact">Contact</ReactBootStrap.Nav.Link>
                         <ReactBootStrap.Nav.Link href="/login"><button className="btn btn-warning">Log In</button></ReactBootStrap.Nav.Link>
+                        <ReactBootStrap.Nav.Link href="#">{name?.length > 0 ?<button className="btn btn-warning">{name}</button>:null}</ReactBootStrap.Nav.Link>
                     </ReactBootStrap.Nav>
                 </ReactBootStrap.Navbar.Collapse>
             </ReactBootStrap.Navbar>

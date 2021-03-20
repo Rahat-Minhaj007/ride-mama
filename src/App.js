@@ -11,9 +11,16 @@ import NoMatch from './components/NoMatch/NoMatch';
 import Login from './components/Login/Login';
 import RideDetail from './components/RideDetail/RideDetail';
 import PriceDetail from './components/PriceDetail/PriceDetail';
+import { createContext, useState } from 'react';
+
+export const UserContext = createContext();
+
 
 function App() {
+  const [loggedInUser,setLoggedInUser] = useState({})
   return (
+    <UserContext.Provider value={[loggedInUser,setLoggedInUser]}> 
+   
     <Router>
       <Header></Header>
       <Switch>
@@ -38,6 +45,7 @@ function App() {
       </Switch>
 
     </Router>
+    </UserContext.Provider>
   );
 }
 

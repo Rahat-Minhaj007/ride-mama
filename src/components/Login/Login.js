@@ -1,37 +1,39 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Login.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationArrow } from '@fortawesome/free-solid-svg-icons';
+import {fab,faFacebook,faGooglePlus} from "@fortawesome/free-brands-svg-icons";
 import firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from "./firebase.config";
+import { UserContext } from '../../App';
 
 
 if (!firebase.apps.length) {
     firebase.initializeApp(firebaseConfig);
-  }
+}
 
 const Login = () => {
-    const handleGoogleSignIn = () =>{
+    const [loggedInUser,setLoggedInUser] = useContext(UserContext);
+
+    const handleGoogleSignIn = () => {
         var googleProvider = new firebase.auth.GoogleAuthProvider();
         firebase.auth()
-  .signInWithPopup(googleProvider)
-  .then((result) => {
+            .signInWithPopup(googleProvider)
+            .then((result) => {
 
-    var credential = result.credential;
-    var token = credential.accessToken;
-    var user = result.user;
-    console.log(user);
+                const { displayName, email } = result.user;
+                const signedInUser = { name: displayName, email };
+                setLoggedInUser(signedInUser);
 
-  })
-  .catch((error) => {
+            })
+            .catch((error) => {
 
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    var email = error.email;
-    var credential = error.credential;
-   
-  });
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                var email = error.email;
+                var credential = error.credential;
+
+            });
 
     }
     return (
@@ -50,13 +52,13 @@ const Login = () => {
                 <div className="button">
                     <input type="submit" value="Log In" />
                 </div>
-                <hr/>
+                <hr />
                 <div>
-                    <h6 style={{ textAlign: "center"}}>OR</h6>
+                    <h6 className="or" style={{ textAlign: "center" }}>OR</h6>
                     <div>
-                            <button onClick={handleGoogleSignIn} className="anotherLoginBtn forClr1">Continue With Google</button>
-                          
-                            <button className="anotherLoginBtn forClr2 mt-3">Continue With Facebook</button>
+                        <button onClick={handleGoogleSignIn} className="anotherLoginBtn forClr1"> <FontAwesomeIcon style={{fontSize:"25px"}} className="mr-5" icon={faGooglePlus} />Continue With Google</button>
+
+                        <button className="anotherLoginBtn forClr2 mt-3"><FontAwesomeIcon style={{fontSize:"25px"}} className="mr-5" icon={faFacebook} />Continue With Facebook</button>
                     </div>
 
                 </div>

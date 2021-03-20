@@ -6,10 +6,12 @@ import Rides from '../Rides/Rides';
 import './Home.css';
 
 const Home = () => {
+
 const [data,setData] = useState([]);
     useEffect(() => {
         setData(fakeData);
     },[])
+    
     return (
         <div className="home">
             <div className="home-ride">

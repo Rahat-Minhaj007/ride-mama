@@ -29,4 +29,9 @@
     resize: none;
     height: 80px;
 }
+@media(max-width:768px){
+    .mapping{
+        margin-top: 15px;
+    }
+}
 

@@ -37,7 +37,7 @@ const RideDetail = () => {
                     </div>
             </div>
 
-            <div className="col-sm-5">
+            <div className="col-sm-5 mapping">
             {/* <img  style={{width:"100%"}} src={map} alt=""/> */}
                 <Map></Map>
             </div>

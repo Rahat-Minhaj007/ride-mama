@@ -131,7 +131,7 @@ const Login = () => {
         });
       }
     return (
-        <div>
+        <div >
             <div className="login">
                 <h2>LOG IN</h2>
 

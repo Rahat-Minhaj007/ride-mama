@@ -15,16 +15,20 @@ import { createContext, useState } from 'react';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 export const UserContext = createContext();
-export const destinationContext = createContext();
+export const destinationContext1 = createContext();
+export const destinationContext2 = createContext();
 
 
 function App() {
   const [loggedInUser,setLoggedInUser] = useState({});
-  const [userDestination,setUserDestination] = useState({});
-  console.log(userDestination);
+  const [userDestination1,setUserDestination1] = useState({});
+  const [userDestination2,setUserDestination2] = useState({});
+  console.log(userDestination1);
   return (
     <UserContext.Provider value={[loggedInUser,setLoggedInUser]}> 
-    <destinationContext.Provider value = {[userDestination,setUserDestination]}>
+    <destinationContext1.Provider value = {[userDestination1,setUserDestination1]}>
+    <destinationContext2.Provider value = {[userDestination2,setUserDestination2]}>
+     
      
     <Router>
       <Header></Header>
@@ -50,7 +54,8 @@ function App() {
       </Switch>
 
     </Router>
-    </destinationContext.Provider>
+    </destinationContext2.Provider>
+    </destinationContext1.Provider>
     </UserContext.Provider>
     
   );

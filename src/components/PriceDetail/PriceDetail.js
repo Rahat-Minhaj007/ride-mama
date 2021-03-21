@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationArrow } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 import Map from '../Map/Map';
-import { destinationContext } from '../../App';
+import { destinationContext1, destinationContext2 } from '../../App';
 
 
 const PriceDetail = () => {
@@ -17,23 +17,25 @@ const PriceDetail = () => {
     const ride = fakeData.find(rd => rd.id === parseInt(id));
     const {img,regular,platinum,premium,regularPrc,platinumPrc,premiumPrc} = ride;
 
-    const [userDestination,setUserDestination] = useContext(destinationContext);
-    const {name1,name2} = userDestination;
+    const [userDestination1,setUserDestination1] = useContext(destinationContext1);
+    const {name1} = userDestination1;
+    const [userDestination2,setUserDestination2] = useContext(destinationContext2);
+    const {name2} = userDestination2;
    
     return (
         <div className="row  mt-5 ml-5 d-flex justify-content-around">
             <div className=" col-sm-4">
                 <div className="card" style={{ width: '18rem',border:"none"}}>
                     <div  style={{backgroundColor:"rgb(255, 204, 0)" }} className="card-body">
-                        <h5 className="card-title text-center">RIDE MAMA</h5>
+                        <h2 className="card-title text-center">RIDE MAMA</h2>
                         <div className="d-flex justify-content-around">
                             
                           <FontAwesomeIcon style={{fontSize:"30px"}} className="mt-5" icon={faLocationArrow} />
                             <div>
-                                <h6>{name1}</h6>
+                                <h3>{name1}</h3>
                                 <br/>
                                 <br/>
-                                <h6>{name2}</h6>
+                                <h3>{name2}</h3>
                             </div>
                         </div>
                     </div>

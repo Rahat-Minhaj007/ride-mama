@@ -29,7 +29,7 @@ const Header = () => {
                             Blog
                 </ReactBootStrap.Nav.Link>
                         <ReactBootStrap.Nav.Link href="/contact">Contact</ReactBootStrap.Nav.Link>
-                        <ReactBootStrap.Nav.Link href="/login"><button className="btn btn-warning">{name?.length > 0 ?'Log Out': 'Log In' }</button></ReactBootStrap.Nav.Link>
+                        <ReactBootStrap.Nav.Link href="/login"><button className="btn btn-warning">{name?.length > 0 ?'Log Out': 'Log In'}</button></ReactBootStrap.Nav.Link>
                         <ReactBootStrap.Nav.Link href="#">{name?.length > 0 ?<button className="btn btn-warning"><img style={{width:"30px",borderRadius :"50%"}} src={photo} alt=""/> {name}</button> :null}</ReactBootStrap.Nav.Link>
                     </ReactBootStrap.Nav>
                 </ReactBootStrap.Navbar.Collapse>

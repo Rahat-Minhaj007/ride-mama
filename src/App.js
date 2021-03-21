@@ -42,9 +42,9 @@ function App() {
         <PrivateRoute path="/rideDetail/:id">
           <RideDetail></RideDetail>
         </PrivateRoute>
-        <Route path="/price/:id">
+        <PrivateRoute path="/price/:id">
           <PriceDetail></PriceDetail>
-        </Route>
+        </PrivateRoute>
         <Route exact path="/">
           <Home></Home>
         </Route>

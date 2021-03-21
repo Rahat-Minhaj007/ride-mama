@@ -133,7 +133,7 @@ const Login = () => {
     return (
         <div >
             <div className="login">
-                <h2>LOG IN</h2>
+                <h2>RIDE MAMA</h2>
 
                 <form onSubmit={handleSubmit}>
                     <div className="login-input-field">
@@ -149,7 +149,7 @@ const Login = () => {
                     </div>
 
                     <div className="button">
-                        <input type="submit" value= {newUser ? 'Sign Up' : 'Logged In'} />
+                        <input type="submit" value= {newUser ? 'Sign Up' : 'Log In'} />
                     </div>
                 </form>
                 <div className="mt-4 text-center">

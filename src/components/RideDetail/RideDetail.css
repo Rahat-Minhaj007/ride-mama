@@ -31,7 +31,8 @@
 }
 @media(max-width:768px){
     .mapping{
-        margin-top: 15px;
+        margin-top: 20px;
+        width: 200px;
     }
 }
 

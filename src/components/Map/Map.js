@@ -1,5 +1,6 @@
 import React from 'react';
 import { Map,  Marker, GoogleApiWrapper } from 'google-maps-react';
+import './Map.css';
 
 const GoogleMap = (props) => {
 
@@ -19,6 +20,7 @@ const GoogleMap = (props) => {
             <Map
                 google={props.google}
                 zoom={7}
+                className="gogleMap"
                 style={mapStyles}
                 initialCenter={{
                     lat: 23.6850,

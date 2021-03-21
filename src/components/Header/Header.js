@@ -6,7 +6,7 @@ import './Header.css';
 const Header = () => {
     const [loggedInUser,setLoggedInUser] = useContext(UserContext);
     const {name} = loggedInUser;
-    console.log(loggedInUser);
+    
     return (
         <div className="navi">
             <ReactBootStrap.Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">

@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 const Rides = (props) => {
     const { name,img,id} = props.data;
     return (
-        <div className="rides mt-5 mb-5 text-center">
-            <Card style={{ width: '12rem'}}>
+        <div className="rides mt-5 ml-5 text-center col-sm-2 ">
+            <Card style={{ width: '18rem',height: '15rem'}}>
                 <Card.Body>
                     <img style={{ width: '50%' }} src={img} alt="" />
                    

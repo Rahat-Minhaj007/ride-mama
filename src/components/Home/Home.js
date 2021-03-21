@@ -13,8 +13,8 @@ const Home = () => {
     }, [])
 
     return (
-        <div className="home">
-            <div className="home-ride">
+        <div className="home d-flex align-items-center">
+            <div className="row ml-4">
                 {
                     data.map(dt => <Rides data={dt} key={dt.id}></Rides>)
                 }

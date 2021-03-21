@@ -13,7 +13,7 @@
 .home-ride {
     display: grid;
     grid-template-columns: repeat(4, 0.2fr);
-    margin-left: 360px;
+    
     
 }
 @media (max-width: 768px) {

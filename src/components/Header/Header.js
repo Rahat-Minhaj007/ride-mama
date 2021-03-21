@@ -5,7 +5,7 @@ import './Header.css';
 
 const Header = () => {
     const [loggedInUser,setLoggedInUser] = useContext(UserContext);
-    const {name} = loggedInUser;
+    const {name,photo} = loggedInUser;
     
     return (
         <div className="navi">
@@ -29,8 +29,8 @@ const Header = () => {
                             Blog
                 </ReactBootStrap.Nav.Link>
                         <ReactBootStrap.Nav.Link href="/contact">Contact</ReactBootStrap.Nav.Link>
-                        <ReactBootStrap.Nav.Link href="/login"><button className="btn btn-warning">Log In</button></ReactBootStrap.Nav.Link>
-                        <ReactBootStrap.Nav.Link href="#">{name?.length > 0 ?<button className="btn btn-warning">{name}</button>:null}</ReactBootStrap.Nav.Link>
+                        <ReactBootStrap.Nav.Link href="/login"><button className="btn btn-warning">{name?.length > 0 ?'Log Out': 'Log In' }</button></ReactBootStrap.Nav.Link>
+                        <ReactBootStrap.Nav.Link href="#">{name?.length > 0 ?<button className="btn btn-warning"><img style={{width:"30px",borderRadius :"50%"}} src={photo} alt=""/> {name}</button> :null}</ReactBootStrap.Nav.Link>
                     </ReactBootStrap.Nav>
                 </ReactBootStrap.Navbar.Collapse>
             </ReactBootStrap.Navbar>

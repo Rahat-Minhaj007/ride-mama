@@ -6,9 +6,9 @@ This project was HTML5,CSS3,JAVASCRIPT,Bootstrapped,React Router,Firebase,React 
 This is a react based project.Where we mainly focused on React Router & Authentication Using Firebase.In this project We are trying to Implement Ride Sharing System.In home page we show some card where we show some dynamic data of different types of Ride like their dynamic Image & name.After clicking name we will take you Log In page if you still not Logged In .After Successfully Logged In You will go Pick up to set Your Destination page.After successfully done that You will go the price set page.
 
 ### Key Features :
-1.This is an online course based secured dynamic website where user can log in & book their expected courses.
-2.User can give review & this review will save on database & show on the home page testimonial section. A user can pay using payment gateway(stripe) for their booked course.
-3.Admin can manage the course list can add new admin, can change order status.
+1.Transport Options with their corresponding Price
+2.Tells you about available route option with their corresponding price and location
+3.Multiple Login Methods implemented by using Firebase authentication.
  <br/>
 
 
